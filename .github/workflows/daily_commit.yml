@@ -17,7 +17,7 @@ jobs:
 
       - name: Make daily change to file
         run: |
-          echo "Updated at: $(date -u)" > last_updated.txt
+          echo "Updated at: $(date -u)" > latest_updated.txt
         
       - name: debeshee05@gmail.com
         run: |
