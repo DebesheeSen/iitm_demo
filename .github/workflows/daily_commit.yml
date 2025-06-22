@@ -20,5 +20,5 @@ jobs:
           git config --global user.email "debeshee05@gmail.com"
           git config --global user.name "DebesheeSen"
           git add .
-          git commit -m "Update once per day"
-          git push
+          git commit -m "Update"
+          git push origin main
