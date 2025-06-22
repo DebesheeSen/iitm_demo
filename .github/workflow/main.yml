@@ -6,12 +6,12 @@ on:
       - main
   schedule:
     - cron: '* * * * *'
-
+  workflow_dispatch:
+  
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
       - name: debeshee05@gmail.com
         run: |
           git config --local user.email "debeshee05@gmail.com"
