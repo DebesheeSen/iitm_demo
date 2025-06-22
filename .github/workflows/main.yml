@@ -1,0 +1,19 @@
+name: Daily Auto-Commit
+
+on:
+  schedule:
+    - cron: '30 12 * * *'
+  workflow_dispatch:
+
+jobs:
+  auto-commit:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: debeshee05@gmail.com
+        run: |
+          git config --local user.email "debeshee05@gmail.com"
+          git config --local user.name "DebesheeSen"
+          git add .
+          git commit -m "Update once per day"
+          git push
